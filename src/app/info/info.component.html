@@ -1,0 +1,16 @@
+<div class="flex-container">
+    <div id = "info">
+        <h1>Индивидуальный предприниматель {{ currentUser?.name}}</h1>
+        
+        <p id="phone">{{currentUser?.phonenumber}}</p>
+        <p id="email">{{currentUser?.email}}</p>
+        <p id="site">{{currentUser?.site}}</p>
+        <p id="info">{{currentUser?.info}}</p>
+        <p id="requisites">{{currentUser?.requisites}}</p>
+        <div id="payments" *ngIf = "currentUser.isAdministrator">{{listPayments}}</div>
+    </div>
+    <div id="image">
+            <img [src]="currentUser.image" alt="client">
+        </div>
+    
+</div>

@@ -1,0 +1,39 @@
+#footer{
+    width: 100%;
+    height: 100px;
+    background: #1d1c31;
+    color: white;
+    text-align: center;
+}
+#social{
+    border-bottom: #312f51 solid 2px;
+}
+ul{
+    padding: 10px;
+    list-style: none;
+}
+li{
+    display: inline-block;
+    padding-right: 10px;
+}
+a.icon:hover > div{
+    opacity: 0.5;
+}
+.icon-vk {
+    background-image: url(images.png);
+    background-position: 0px 0px;
+    width: 32px;
+    height: 32px;
+  }
+.icon-facebook {
+    background-image: url(images.png);
+    background-position: -32px 0px;
+    width: 32px;
+    height: 32px;
+  }
+.icon-twitter {
+    background-image: url(images.png);
+    background-position: 0px -32px;
+    width: 32px;
+    height: 32px;
+  }

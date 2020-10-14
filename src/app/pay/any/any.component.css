@@ -1,0 +1,21 @@
+.form{
+    width: 300px;
+    height: auto;
+    background: #1d1c31;
+    color: white;
+    font-family: "Georgia", serif;
+    font-weight: lighter;
+}
+form{
+    padding: 20px;
+}
+input[type="text"], select{
+    width: 100%;
+    color: #1d1c31;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+input[type="submit"]{
+    padding: 5px;
+    background: white;
+    color: #1d1c31;
+}

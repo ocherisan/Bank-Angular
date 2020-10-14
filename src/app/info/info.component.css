@@ -1,0 +1,24 @@
+img{
+    src: url(client.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: 2px solid #312f51;
+	margin: auto;
+}
+div#image{
+    margin: 20px;
+}
+.flex-container {
+    display: -webkit-flex; 
+    display: flex; /*отображает контейнер как блочный элемент*/
+    flex-direction: row;
+    position: relative;
+}
+@media screen and (max-width: 768px){
+	.flex-container {
+        display: -webkit-flex; 
+        display: flex; /*отображает контейнер как блочный элемент*/
+        flex-direction: column;
+    }
+}

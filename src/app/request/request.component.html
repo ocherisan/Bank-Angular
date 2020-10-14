@@ -1,0 +1,43 @@
+
+<div class="form">
+    <form class="request">
+        <div>
+            ИНН получателя
+            <input type="text" id="inn_request" (keyup)="checkParams_request()" required>
+        </div>
+        <div>
+            БИК
+            <input type="text" id="bik_request" (keyup)="checkParams_request()" required>
+        </div>
+        <div>
+            Номер счёта
+            <input type="text" id="accnumber_request" (keyup)="checkParams_request()" required>
+        </div>
+        <div>
+            За что<br>
+            <select id="nds_request" name="НДС" required>
+                <option value="18">НДС 18%</option>
+                <option value="10">НДС 10%</option>
+                <option value="0">Без НДС</option>
+            </select>
+        </div>
+        <div>
+            Сколько
+            <input type="text" id="count_request" (keyup)="checkParams_request()" required>
+        </div>
+        <div>
+            Номер телефона
+            <input type="text" id="tel_request" (keyup)="checkParams_request()" required>
+        </div>
+        <div>
+            Электронная почта
+            <input type="text" id="email_request" (keyup)="checkParams_request()" required>
+        </div><br>
+        <div>
+            <input type="submit" value="Создать платёж" id="submit_request" (click) = "request_sendData()">
+        </div>
+        <div>
+            <button id="clear_request" (click) = "clear()"> Очистить форму </button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,32 @@
+
+<div class="form">
+    <form class="any">
+        <div>
+            Номер карты
+            <input type="text" id="numbercard_any" (keyup)="checkParams_any()" required>
+        </div>
+        <div>
+            ММ/ГГ
+            <input type="text" id="mmgg_any" (keyup)="checkParams_any()" required>
+        </div>
+        <div>
+            CVC
+            <input type="text" id="cvc_any" (keyup)="checkParams_any()" required>
+        </div>
+        <div>
+            Сумма
+            <input type="text" id="sum_any" (keyup)="checkParams_any()" required>
+        </div>
+        <div>
+            Комментарий
+            <input type="text" id="comment_any" (keyup)="checkParams_any()" required>
+        </div>
+        <div>
+            Электронная почта
+            <input type="text" id="email_any" (keyup)="checkParams_any()" required>
+        </div><br>
+        <div>
+            <input type="submit" value="Заплатить" id="submit_any" (click) = "any_sendData()">
+        </div>
+    </form>
+</div>

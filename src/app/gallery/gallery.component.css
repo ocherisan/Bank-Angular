@@ -1,0 +1,35 @@
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 32.5%;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  #1{
+      src: url(1.jpg);
+  }
+  #2{
+    src: url(2.jpg);
+}
+#3{
+    src: url(3.jpg);
+}
+@media screen and (max-width: 768px){
+	div.gallery{
+    width: 100%;
+    height: auto;
+  }
+}

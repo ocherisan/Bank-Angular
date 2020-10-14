@@ -1,0 +1,36 @@
+
+<div class="form">
+    <form class="own">
+        <div>
+            От кого
+            <input type="text" id="from_own" (keyup)="checkParams_own()" required>
+        </div>
+        <div>
+            БИК
+            <input type="text" id="bik_own" (keyup)="checkParams_own()" required>
+        </div>
+        <div>
+            Номер счёта
+            <input type="text" id="account_own" (keyup)="checkParams_own()" required>
+        </div>
+        <div>
+            За что<br>
+            <select id="nds_own" name="НДС" required>
+                <option value="18">НДС 18%</option>
+                <option value="10">НДС 10%</option>
+                <option value="0">Без НДС</option>
+            </select>
+        </div>
+        <div>
+            Сколько
+            <input type="text" id="count_own" (keyup)="checkParams_own()" required>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Получить файл" id="submit_own" (click)="getFile()">
+        </div>
+        <div>
+            <button id="clear_request" (click) = "clear()"> Очистить форму </button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,5 @@
+<div class="cont">
+    <app-choice (selected) = "change($event)"></app-choice>
+    <app-any *ngIf = "selected === 'any'"></app-any>
+    <app-own *ngIf = "selected !== 'any'"></app-own>
+</div>

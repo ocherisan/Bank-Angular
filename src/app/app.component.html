@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class = "container">
+  <div class="content">
+    <div *ngIf = "authorized">
+      <button (click)="unAuth()">Выйти</button>
+    </div>
+    <app-cabinet (auth) = "auth($event)" *ngIf="!authorized"></app-cabinet>
+    <app-info *ngIf = "authorized" [currentUser] = "user"></app-info>
+    <app-action  (selected) = "change($event)" *ngIf="authorized"></app-action>
+    <app-pay *ngIf = "selected === 'pay' && authorized"></app-pay>
+    <app-request *ngIf = "selected !== 'pay' && authorized"></app-request>
+    <app-gallery *ngIf = "authorized"></app-gallery>
+  </div>
+  <div class="footer">
+    <app-footer *ngIf = "authorized"></app-footer>
+  </div>
+</div>
+
